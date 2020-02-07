@@ -38,7 +38,7 @@ public class StartProgram {
 
 		private static void editAnItem() {
 			// TODO Auto-generated method stub
-				System.out.print("\nEnter the Game name to Edit: ");
+				System.out.print("\nEnter the name of the Game to Edit: ");
 				String gameName = in.nextLine();
 				
 				List<ListItem> foundItems;
@@ -85,14 +85,14 @@ public class StartProgram {
 
 		public static void runMenu() {
 			boolean goAgain = true;
-			System.out.println("--- Welcome to our awesome shopping list! ---");
+			System.out.println("--- Welcome to the Game List! ---");
 			while (goAgain) {
-				System.out.println("\n\n*  Select an item:");
-				System.out.println("*  1 -- Add an item");
-				System.out.println("*  2 -- Edit an item");
-				System.out.println("*  3 -- Delete an item");
-				System.out.println("*  4 -- View the list");
-				System.out.println("*  5 -- Exit the awesome program");
+				System.out.println("\n\n*  Select a number:");
+				System.out.println("*  1 -- Add a Game");
+				System.out.println("*  2 -- Edit a Game");
+				System.out.println("*  3 -- Delete a Game");
+				System.out.println("*  4 -- View the list of Games");
+				System.out.println("*  5 -- Exit the program");
 				System.out.print("*  Your selection: ");
 				int selection = in.nextInt();
 				in.nextLine();
@@ -107,7 +107,7 @@ public class StartProgram {
 					viewTheList();
 				} else {
 					lih.cleanUp();
-					System.out.println("   Goodbye!   ");
+					System.out.println("   Exiting Program, Goodbye!   ");
 					goAgain = false;
 				}
 
